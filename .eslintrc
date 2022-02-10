@@ -1,0 +1,50 @@
+{
+  "env": {
+    "browser": true,
+    "jest": true,
+    "es6": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "react-hooks",
+    "jsx-a11y",
+    "sonarjs"
+  ],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:sonarjs/recommended"
+  ],
+  "parserOptions": {
+    "project": [
+      "tsconfig.json"
+    ],
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "@typescript-eslint/no-non-null-assertion": 0,
+    "@typescript-eslint/no-empty-function": 0,
+    "react/prop-types": 0,
+    "react/destructuring-assignment": ["warn", "always"],
+    "react-hooks/exhaustive-deps": 0,
+    "max-len": ["warn", { "code": 120 }],
+    "newline-before-return": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "quotes": ["warn", "single"],
+    "camelcase": ["error"]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "ignorePatterns": ["webpack.*.js", "fileMock.js", "server.js"] 
+}

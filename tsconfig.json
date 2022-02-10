@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "allowJs": true,
+      "allowSyntheticDefaultImports": true,
+      "baseUrl": "./",
+      "downlevelIteration": true,
+      "esModuleInterop": true,
+      "jsx": "react",
+      "lib": ["esnext","dom"],
+      "module": "esnext",
+      "moduleResolution": "node",
+      "noImplicitAny": false,
+      "removeComments": true,
+      "resolveJsonModule": true,
+      "skipLibCheck": true,
+      "sourceMap": true,
+      "target": "es5",
+    },
+    "include": ["**/*.ts", "**/*.tsx", "typings/**/*.d.ts"],
+    "exclude": ["./node_modules/*", "./__mocks__/*", "./server.js"]
+  }
